@@ -31,7 +31,10 @@ body {
 }
 
 
-/* STARTPUNKT */
+/* =========================
+   STARTPUNKT
+========================= */
+
 
 .point {
 
@@ -42,6 +45,7 @@ body {
     top:50%;
 
     width:20px;
+
     height:20px;
 
     background:#ff7a00;
@@ -72,7 +76,11 @@ body {
 }
 
 
-/* LINIE */
+
+/* =========================
+   LINIE
+========================= */
+
 
 .line {
 
@@ -112,7 +120,11 @@ body {
 }
 
 
-/* FLASH */
+
+/* =========================
+   FLASH
+========================= */
+
 
 .flash {
 
@@ -152,6 +164,7 @@ body {
 
     }
 
+
     100% {
 
         opacity:0;
@@ -161,7 +174,11 @@ body {
 }
 
 
-/* PANEL */
+
+/* =========================
+   HAUPTFLÄCHE
+========================= */
+
 
 .panel {
 
@@ -178,6 +195,7 @@ body {
 
     height:0;
 
+
     background:
 
     linear-gradient(
@@ -186,13 +204,18 @@ body {
         #242424
     );
 
+
     border:3px solid #ff7a00;
+
 
     border-radius:20px;
 
+
     overflow:hidden;
 
+
     animation:expandPanel 1.2s forwards;
+
 
     animation-delay:3s;
 
@@ -216,7 +239,10 @@ body {
 
 
 
-/* SCROLL */
+/* =========================
+   SCROLL
+========================= */
+
 
 .scroll {
 
@@ -227,6 +253,7 @@ body {
     padding:45px;
 
 }
+
 
 
 .scroll::-webkit-scrollbar {
@@ -253,7 +280,12 @@ body {
 
 
 
-/* CONTENT */
+
+
+/* =========================
+   CONTENT
+========================= */
+
 
 .content {
 
@@ -266,6 +298,7 @@ body {
 }
 
 
+
 @keyframes showContent {
 
     from {
@@ -276,6 +309,7 @@ body {
 
     }
 
+
     to {
 
         opacity:1;
@@ -285,6 +319,8 @@ body {
     }
 
 }
+
+
 
 
 h1 {
@@ -298,11 +334,15 @@ h1 {
 }
 
 
+
 h2 {
 
     font-weight:normal;
 
 }
+
+
+
 
 
 .section {
@@ -311,13 +351,17 @@ h2 {
 
     padding:25px;
 
+
     background:#0c0c0c;
 
+
     border-radius:15px;
+
 
     border:1px solid #333;
 
 }
+
 
 
 .section h3 {
@@ -327,17 +371,24 @@ h2 {
 }
 
 
-/* VIDEO */
+
+/* =========================
+   VIDEO KOMPAKT
+========================= */
+
 
 .video {
 
-    width:100%;
+    width:70%;
+
+    max-width:700px;
 
     aspect-ratio:16/9;
 
-    margin-top:20px;
+    margin:20px auto;
 
 }
+
 
 
 .video iframe {
@@ -346,9 +397,12 @@ h2 {
 
     height:100%;
 
+
     border-radius:15px;
 
+
     border:2px solid #ff7a00;
+
 
     box-shadow:
 
@@ -357,40 +411,58 @@ h2 {
 }
 
 
-/* BUTTONS */
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
 
 .button {
 
     display:inline-block;
 
+
     margin:10px;
+
 
     padding:15px 35px;
 
+
     background:#ff7a00;
+
 
     color:#000;
 
+
     text-decoration:none;
+
 
     font-weight:bold;
 
+
     border-radius:10px;
+
 
     transition:.3s;
 
 }
 
 
+
 .button:hover {
 
+
     transform:scale(1.08);
+
 
     box-shadow:
 
     0 0 20px #ff7a00,
 
     0 0 60px #ff7a00;
+
 
 }
 
@@ -400,8 +472,8 @@ h2 {
 </head>
 
 
-
 <body>
+
 
 
 <div class="point"></div>
@@ -411,6 +483,7 @@ h2 {
 <div class="flash"></div>
 
 
+
 <div class="panel">
 
 
@@ -418,6 +491,7 @@ h2 {
 
 
 <div class="content">
+
 
 
 <h1>
@@ -436,11 +510,12 @@ Digitale Bewerbungsplattform
 
 
 
+
 <div class="section">
 
 
 <h3>
-Vorstellung
+▶ Kurzvorstellung
 </h3>
 
 
@@ -468,6 +543,8 @@ allowfullscreen>
 
 
 </div>
+
+
 
 
 
@@ -500,12 +577,15 @@ und meine Leidenschaft für IT-Systeme.
 
 
 
+
+
 <div class="section">
 
 
 <h3>
 Bewerbungsunterlagen
 </h3>
+
 
 
 <a class="button" href="#">
@@ -524,6 +604,9 @@ Bewerbungsunterlagen
 
 
 </div>
+
+
+
 
 
 
@@ -553,6 +636,7 @@ Telefon
 </div>
 
 </div>
+
 
 
 </body>
