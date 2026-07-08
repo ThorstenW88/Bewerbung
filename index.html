@@ -61,6 +61,7 @@ body {
 
 
 
+
 /* =========================
 STARTPUNKT
 ========================= */
@@ -78,12 +79,9 @@ width:20px;
 
 height:20px;
 
-
 background:#ff7a00;
 
-
 border-radius:50%;
-
 
 transform:translateY(-50%);
 
@@ -101,19 +99,16 @@ animation:pulse 1.5s infinite;
 
 
 
-
 @keyframes pulse {
 
 
 50% {
-
 
 transform:
 
 translateY(-50%)
 
 scale(1.4);
-
 
 }
 
@@ -226,12 +221,9 @@ border-radius:50%;
 opacity:0;
 
 
-
 box-shadow:
 
-
 0 0 120px 60px #ff7a00;
-
 
 
 animation:
@@ -251,12 +243,9 @@ animation-delay:2.7s;
 
 50% {
 
-
 opacity:1;
 
-
 transform:scale(15);
-
 
 }
 
@@ -264,9 +253,7 @@ transform:scale(15);
 
 100% {
 
-
 opacity:0;
-
 
 }
 
@@ -309,7 +296,6 @@ width:0;
 height:0;
 
 
-
 background:
 
 linear-gradient(
@@ -344,6 +330,7 @@ animation-delay:3s;
 
 
 }
+
 
 
 
@@ -392,7 +379,6 @@ padding:45px;
 
 
 
-
 .scroll::-webkit-scrollbar {
 
 
@@ -400,7 +386,6 @@ width:12px;
 
 
 }
-
 
 
 
@@ -415,7 +400,6 @@ background:#111;
 
 
 
-
 .scroll::-webkit-scrollbar-thumb {
 
 
@@ -426,7 +410,6 @@ border-radius:20px;
 
 
 }
-
 
 
 
@@ -450,12 +433,10 @@ animation:
 showContent 1s forwards;
 
 
-
 animation-delay:4s;
 
 
 }
-
 
 
 
@@ -475,7 +456,6 @@ transform:translateY(30px);
 
 
 
-
 to {
 
 
@@ -486,7 +466,6 @@ transform:translateY(0);
 
 
 }
-
 
 
 }
@@ -521,13 +500,10 @@ gap:40px;
 padding:25px;
 
 
-
 background:#0c0c0c;
 
 
-
 border-radius:15px;
-
 
 
 border-left:
@@ -535,11 +511,9 @@ border-left:
 4px solid #ff7a00;
 
 
-
 border:
 
 1px solid #333;
-
 
 
 box-shadow:
@@ -549,6 +523,7 @@ box-shadow:
 
 
 }
+
 
 
 
@@ -566,15 +541,12 @@ height:190px;
 object-fit:cover;
 
 
-
 border-radius:50%;
-
 
 
 border:
 
 3px solid #ff7a00;
-
 
 
 box-shadow:
@@ -583,8 +555,8 @@ box-shadow:
 0 0 25px #ff7a00;
 
 
-
 }
+
 
 
 
@@ -601,16 +573,13 @@ flex:1;
 
 
 
-
 .header-text h1 {
 
 
 margin:0;
 
 
-
 font-size:42px;
-
 
 
 color:#ff7a00;
@@ -637,25 +606,19 @@ margin-top:10px;
 
 
 
-
-
 .header-line {
 
 
 height:3px;
 
 
-
 width:220px;
-
 
 
 background:#ff7a00;
 
 
-
 margin-top:15px;
-
 
 
 box-shadow:
@@ -670,6 +633,61 @@ box-shadow:
 
 
 
+
+/* =========================
+STATUS
+========================= */
+
+
+.status {
+
+
+margin-top:20px;
+
+
+padding:12px 20px;
+
+
+background:#111;
+
+
+border-left:
+
+4px solid #ff7a00;
+
+
+letter-spacing:2px;
+
+
+font-size:14px;
+
+
+box-shadow:
+
+
+0 0 20px rgba(255,122,0,.15);
+
+
+}
+
+
+
+
+.online-dot {
+
+
+color:#00ff66;
+
+
+text-shadow:
+
+
+0 0 10px #00ff66;
+
+
+}
+
+<style>
 
 
 /* =========================
@@ -721,15 +739,12 @@ width:100%;
 height:100%;
 
 
-
 border-radius:12px;
-
 
 
 border:
 
 2px solid #ff7a00;
-
 
 
 box-shadow:
@@ -739,50 +754,6 @@ box-shadow:
 
 
 }
-
-
-    <style>
-
-
-/* =========================
-STATUS
-========================= */
-
-
-.status {
-
-
-margin-top:20px;
-
-
-padding:12px 20px;
-
-
-background:#111;
-
-
-border-left:
-
-4px solid #ff7a00;
-
-
-color:#ff7a00;
-
-
-letter-spacing:2px;
-
-
-font-size:14px;
-
-
-box-shadow:
-
-
-0 0 20px rgba(255,122,0,.15);
-
-
-}
-
 
 
 
@@ -801,7 +772,6 @@ margin-top:30px;
 
 
 padding:25px;
-
 
 
 background:
@@ -841,7 +811,6 @@ box-shadow:
 
 
 
-
 .section h3 {
 
 
@@ -849,6 +818,83 @@ color:#ff7a00;
 
 
 }
+
+
+
+
+
+
+
+
+/* =========================
+KONTAKT GRID
+========================= */
+
+
+.contact-grid {
+
+
+display:flex;
+
+
+gap:20px;
+
+
+justify-content:space-between;
+
+
+}
+
+
+
+.contact-box {
+
+
+flex:1;
+
+
+padding:20px;
+
+
+background:#111;
+
+
+border-left:
+
+3px solid #ff7a00;
+
+
+border-radius:10px;
+
+
+box-shadow:
+
+
+0 0 15px rgba(255,122,0,.1);
+
+
+}
+
+
+
+
+.contact-title {
+
+
+color:#ff7a00;
+
+
+font-size:14px;
+
+
+letter-spacing:2px;
+
+
+margin-bottom:10px;
+
+
+}
+
 
 
 
@@ -867,40 +913,31 @@ BUTTONS
 display:inline-block;
 
 
-
 margin:10px;
-
 
 
 padding:15px 35px;
 
 
-
 background:#ff7a00;
-
 
 
 color:#000;
 
 
-
 text-decoration:none;
-
 
 
 font-weight:bold;
 
 
-
 border-radius:10px;
-
 
 
 transition:.3s;
 
 
 }
-
 
 
 
@@ -917,11 +954,11 @@ box-shadow:
 
 0 0 20px #ff7a00,
 
+
 0 0 60px #ff7a00;
 
 
 }
-
 
 
 </style>
@@ -1006,10 +1043,13 @@ IT-Systemelektroniker
 
 
 
+
 <div class="status">
 
 
-● SYSTEM ONLINE
+<span class="online-dot">●</span>
+
+SYSTEM ONLINE
 
 
 <br>
@@ -1033,19 +1073,23 @@ DIGITAL PORTFOLIO
 
 
 
+
+
 <!-- VIDEO -->
 
 
 <div class="header-video">
 
 
+
 <div class="video-title">
 
 
-▶ SYSTEM PRESENTATION
+▶ EINBLICK IN MEINE PERSON
 
 
 </div>
+
 
 
 
@@ -1056,7 +1100,9 @@ DIGITAL PORTFOLIO
 src="https://www.youtube.com/embed/KTcR1otFX7g?rel=0&modestbranding=1"
 
 
-title="System Presentation"
+
+title="Einblick in meine Person"
+
 
 
 frameborder="0"
@@ -1079,62 +1125,8 @@ allowfullscreen>
 
 
 
-
 </div>
 
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- =========================
-ÜBER MICH
-========================= -->
-
-
-<div class="section">
-
-
-
-<h3>
-
-Über mich
-
-</h3>
-
-
-
-
-<p>
-
-
-Technik begeistert mich nicht nur durch ihre
-Funktion, sondern durch das Verständnis der
-Systeme dahinter.
-
-
-
-<br><br>
-
-
-
-Diese digitale Bewerbungsseite gibt einen Einblick
-in meinen beruflichen Weg, meine Arbeitsweise
-und meine Leidenschaft für IT-Systeme.
-
-
-
-</p>
 
 
 
@@ -1157,12 +1149,12 @@ DOKUMENTE
 <div class="section">
 
 
+
 <h3>
 
 Bewerbungsunterlagen
 
 </h3>
-
 
 
 
@@ -1216,6 +1208,7 @@ KONTAKT
 <div class="section">
 
 
+
 <h3>
 
 Kontakt
@@ -1225,54 +1218,81 @@ Kontakt
 
 
 
-<p>
+
+<div class="contact-grid">
 
 
-E-Mail
 
 
-<br>
+
+<div class="contact-box">
+
+
+<div class="contact-title">
+
+✉ E-MAIL
+
+</div>
 
 
 TWBeruf@gmx.de
 
 
-
-<br><br>
-
+</div>
 
 
-Telefon
 
 
-<br>
+
+
+
+<div class="contact-box">
+
+
+<div class="contact-title">
+
+☎ TELEFON
+
+</div>
 
 
 017632563970
 
 
-
-<br><br>
-
+</div>
 
 
-Wohnort
 
 
-<br>
+
+
+
+<div class="contact-box">
+
+
+<div class="contact-title">
+
+📍 ORT
+
+</div>
 
 
 Lahnstein
 
 
+</div>
 
-</p>
+
+
 
 
 
 
 </div>
 
+
+
+</div>
 
 
 
@@ -1296,5 +1316,5 @@ Lahnstein
 
 </body>
 
-
 </html>
+    
