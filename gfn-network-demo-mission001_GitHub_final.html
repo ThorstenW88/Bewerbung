@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>GFN Network Administration Mission 001</title>
+<style>
+body{background:#080808;color:white;font-family:Segoe UI,Arial,sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.panel{width:560px;background:#151515;border:2px solid #ff7a00;border-radius:18px;padding:35px;box-shadow:0 0 25px rgba(255,122,0,.4)}
+h1,h2{color:#ff7a00}
+button{width:100%;padding:14px;margin-top:20px;background:#ff7a00;border:0;font-weight:bold;cursor:pointer}
+.box{border:1px solid #333;padding:15px;margin-top:20px}
+input,select{width:100%;padding:10px;background:#111;color:white;border:1px solid #ff7a00;margin:8px 0}
+.hidden{display:none}
+</style>
+</head>
+<body>
+
+<div class="panel">
+
+<h1>MODERN DESKTOP ADMINISTRATOR 2020</h1>
+<h2>GFN EDITION</h2>
+
+<div id="mission">
+<h2>MISSION 001</h2>
+
+<div class="box">
+Ein neuer Arbeitsplatz muss in das Firmennetzwerk eingebunden werden.<br><br>
+
+Aufgabe:<br>
+Konfigurieren Sie den Router nach Vorgabe.<br><br>
+
+Zielparameter:<br>
+SSID: HomeWiFi<br>
+Security: WPA2<br>
+Geräte: Laptop + Smartphone
+</div>
+
+<button onclick="startMission()">MISSION STARTEN</button>
+</div>
+
+
+<div id="config" class="hidden">
+
+<h2>NETWORK ADMINISTRATION</h2>
+
+SSID:
+<input id="ssid" placeholder="Netzwerkname">
+
+Security:
+<select id="security">
+<option>WPA2</option>
+<option>WPA3</option>
+<option selected>Open</option>
+</select>
+
+<br>
+<label><input type="checkbox" id="laptop"> Laptop</label>
+<br>
+<label><input type="checkbox" id="phone"> Smartphone</label>
+
+<button onclick="verify()">CHECK SYSTEM</button>
+
+</div>
+
+<div class="box" id="status">
+STATUS: WAITING...
+</div>
+<br><br>
+<button onclick="window.location.href='index.html'">
+← ZURÜCK ZUR PROJEKTSEITE
+</button>
+
+
+</div>
+
+<script>
+function startMission(){
+document.getElementById("mission").style.display="none";
+document.getElementById("config").style.display="block";
+}
+
+function verify(){
+
+let ok =
+document.getElementById("ssid").value==="HomeWiFi" &&
+document.getElementById("security").value==="WPA2" &&
+document.getElementById("laptop").checked &&
+document.getElementById("phone").checked;
+
+document.getElementById("status").innerHTML =
+ok ?
+"MISSION COMPLETE<br><br>NETWORK CONFIGURATION SUCCESSFUL"
+:
+"CONFIGURATION ERROR<br><br>Bitte Vorgaben prüfen.";
+}
+
+function finishMission(){
+document.getElementById("config").style.display="none";
+document.getElementById("mission").style.display="block";
+document.getElementById("status").innerHTML="STATUS: MISSION COMPLETED";
+}
+</script>
+
+</body>
+</html>
