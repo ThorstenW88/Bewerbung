@@ -94,6 +94,7 @@ animation:pulse 1.5s infinite;
 }
 
 
+
 @keyframes pulse {
 
 
@@ -260,8 +261,9 @@ opacity:0;
 
 
 
+
 /* =========================
-HAUPTFLÄCHE
+PANEL
 ========================= */
 
 
@@ -402,6 +404,9 @@ border-radius:20px;
 
 
 
+
+
+
 /* =========================
 CONTENT
 ========================= */
@@ -460,6 +465,9 @@ transform:translateY(0);
 
 
 
+
+
+
 /* =========================
 HEADER MODUL
 ========================= */
@@ -474,7 +482,10 @@ display:flex;
 align-items:center;
 
 
-gap:30px;
+justify-content:space-between;
+
+
+gap:40px;
 
 
 padding:25px;
@@ -497,6 +508,7 @@ border:
 
 
 box-shadow:
+
 
 0 0 25px rgba(255,122,0,.15);
 
@@ -600,17 +612,23 @@ box-shadow:
 
 }
 
-<style>
+
+
+
+
 
 /* =========================
-VIDEO HEADER
+GROSSES VIDEO
 ========================= */
 
 
 .header-video {
 
 
-width:320px;
+width:520px;
+
+
+max-width:45%;
 
 
 aspect-ratio:16/9;
@@ -637,22 +655,16 @@ border:
 2px solid #ff7a00;
 
 
-
 box-shadow:
 
 
-0 0 20px rgba(255,122,0,.5);
+0 0 25px rgba(255,122,0,.5);
 
 
 }
 
 
-
-
-
-
-
-/* =========================
+    /* =========================
 STATUS
 ========================= */
 
@@ -734,6 +746,7 @@ border-left:
 4px solid #ff7a00;
 
 
+
 box-shadow:
 
 
@@ -751,6 +764,7 @@ color:#ff7a00;
 
 
 }
+
 
 
 
@@ -795,6 +809,7 @@ transition:.3s;
 
 
 
+
 .button:hover {
 
 
@@ -816,11 +831,11 @@ box-shadow:
 
 </style>
 
-
 </head>
 
 
 <body>
+
 
 
 
@@ -833,6 +848,7 @@ box-shadow:
 
 
 
+
 <div class="panel">
 
 
@@ -840,6 +856,7 @@ box-shadow:
 
 
 <div class="content">
+
 
 
 
@@ -858,24 +875,35 @@ HEADER
 
 
 
+
+
 <div class="header-text">
 
 
 <h1>
+
 Thorsten Westenberg
+
 </h1>
 
 
+
 <h2>
+
 IT-Systemelektroniker
+
 </h2>
+
 
 
 <div class="header-line"></div>
 
 
 
+
+
 <div class="status">
+
 
 ● SYSTEM ONLINE
 
@@ -883,36 +911,47 @@ IT-Systemelektroniker
 
 DIGITAL PORTFOLIO
 
-</div>
-
-
 
 </div>
 
 
 
 
+</div>
 
 
-<!-- VIDEO NEBEN NAME -->
+
+
+
+
+
+<!-- VIDEO RECHTS -->
 
 
 <div class="header-video">
 
 
+
 <iframe
+
 
 src="https://www.youtube.com/embed/KTcR1otFX7g?si=4Q8cYfQ0Ly6ayX1G"
 
+
 title="YouTube video player"
+
 
 frameborder="0"
 
+
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
 
 referrerpolicy="origin"
 
+
 allowfullscreen>
+
 
 </iframe>
 
@@ -923,7 +962,10 @@ allowfullscreen>
 
 
 
+
 </div>
+
+
 
 
 
@@ -966,7 +1008,10 @@ und meine Leidenschaft für IT-Systeme.
 </p>
 
 
+
 </div>
+
+
 
 
 
@@ -990,11 +1035,13 @@ Bewerbungsunterlagen
 
 
 
+
 <a class="button" href="#">
 
 📄 Anschreiben
 
 </a>
+
 
 
 
@@ -1006,6 +1053,8 @@ Bewerbungsunterlagen
 
 
 
+
+
 <a class="button" href="#">
 
 📄 Zeugnisse
@@ -1014,7 +1063,10 @@ Bewerbungsunterlagen
 
 
 
+
 </div>
+
+
 
 
 
@@ -1071,23 +1123,27 @@ Lahnstein
 </p>
 
 
-</div>
-
-
-
 
 </div>
 
 
+
+
+
+
+
 </div>
 
 
 </div>
+
+
+</div>
+
+
 
 
 
 </body>
 
-
 </html>
-
