@@ -17,6 +17,7 @@
 }
 
 
+
 body {
 
     margin:0;
@@ -58,6 +59,8 @@ body {
 
 
 
+
+
 /* =========================
 STARTPUNKT
 ========================= */
@@ -75,9 +78,12 @@ width:20px;
 
 height:20px;
 
+
 background:#ff7a00;
 
+
 border-radius:50%;
+
 
 transform:translateY(-50%);
 
@@ -92,6 +98,7 @@ box-shadow:
 animation:pulse 1.5s infinite;
 
 }
+
 
 
 
@@ -110,7 +117,10 @@ scale(1.4);
 
 }
 
+
 }
+
+
 
 
 
@@ -175,7 +185,10 @@ width:calc(50vw - 60px);
 
 }
 
+
 }
+
+
 
 
 
@@ -213,9 +226,12 @@ border-radius:50%;
 opacity:0;
 
 
+
 box-shadow:
 
+
 0 0 120px 60px #ff7a00;
+
 
 
 animation:
@@ -245,6 +261,7 @@ transform:scale(15);
 }
 
 
+
 100% {
 
 
@@ -262,8 +279,9 @@ opacity:0;
 
 
 
+
 /* =========================
-PANEL
+HAUPTFLÄCHE
 ========================= */
 
 
@@ -284,10 +302,12 @@ transform:
 translate(-50%,-50%);
 
 
+
 width:0;
 
 
 height:0;
+
 
 
 background:
@@ -309,12 +329,15 @@ border:
 border-radius:20px;
 
 
+
 overflow:hidden;
+
 
 
 animation:
 
 expandPanel 1.2s forwards;
+
 
 
 animation-delay:3s;
@@ -340,6 +363,7 @@ height:82vh;
 
 
 }
+
 
 
 
@@ -379,6 +403,7 @@ width:12px;
 
 
 
+
 .scroll::-webkit-scrollbar-track {
 
 
@@ -386,6 +411,8 @@ background:#111;
 
 
 }
+
+
 
 
 
@@ -423,6 +450,7 @@ animation:
 showContent 1s forwards;
 
 
+
 animation-delay:4s;
 
 
@@ -447,6 +475,7 @@ transform:translateY(30px);
 
 
 
+
 to {
 
 
@@ -459,6 +488,7 @@ transform:translateY(0);
 }
 
 
+
 }
 
 
@@ -469,7 +499,7 @@ transform:translateY(0);
 
 
 /* =========================
-HEADER MODUL
+HEADER
 ========================= */
 
 
@@ -491,10 +521,13 @@ gap:40px;
 padding:25px;
 
 
+
 background:#0c0c0c;
 
 
+
 border-radius:15px;
+
 
 
 border-left:
@@ -502,9 +535,11 @@ border-left:
 4px solid #ff7a00;
 
 
+
 border:
 
 1px solid #333;
+
 
 
 box-shadow:
@@ -518,19 +553,22 @@ box-shadow:
 
 
 
+
 .profile {
 
 
-width:160px;
+width:190px;
 
 
-height:160px;
+height:190px;
 
 
 object-fit:cover;
 
 
+
 border-radius:50%;
+
 
 
 border:
@@ -538,10 +576,12 @@ border:
 3px solid #ff7a00;
 
 
+
 box-shadow:
 
 
 0 0 25px #ff7a00;
+
 
 
 }
@@ -560,19 +600,25 @@ flex:1;
 
 
 
+
+
 .header-text h1 {
 
 
 margin:0;
 
 
+
 font-size:42px;
+
 
 
 color:#ff7a00;
 
 
 }
+
+
 
 
 
@@ -590,22 +636,30 @@ margin-top:10px;
 
 
 
+
+
+
 .header-line {
 
 
 height:3px;
 
 
+
 width:220px;
+
 
 
 background:#ff7a00;
 
 
+
 margin-top:15px;
 
 
+
 box-shadow:
+
 
 0 0 10px #ff7a00;
 
@@ -617,21 +671,41 @@ box-shadow:
 
 
 
+
 /* =========================
-GROSSES VIDEO
+VIDEO MODUL
 ========================= */
 
 
 .header-video {
 
 
-width:520px;
+width:460px;
 
 
-max-width:45%;
+max-width:40%;
 
 
 aspect-ratio:16/9;
+
+
+}
+
+
+
+.video-title {
+
+
+color:#ff7a00;
+
+
+font-size:14px;
+
+
+letter-spacing:2px;
+
+
+margin-bottom:10px;
 
 
 }
@@ -647,12 +721,15 @@ width:100%;
 height:100%;
 
 
+
 border-radius:12px;
+
 
 
 border:
 
 2px solid #ff7a00;
+
 
 
 box-shadow:
@@ -664,7 +741,10 @@ box-shadow:
 }
 
 
-    /* =========================
+    <style>
+
+
+/* =========================
 STATUS
 ========================= */
 
@@ -708,6 +788,7 @@ box-shadow:
 
 
 
+
 /* =========================
 SECTIONS
 ========================= */
@@ -722,6 +803,7 @@ margin-top:30px;
 padding:25px;
 
 
+
 background:
 
 linear-gradient(
@@ -733,6 +815,7 @@ linear-gradient(
 
 
 border-radius:15px;
+
 
 
 border:
@@ -757,6 +840,8 @@ box-shadow:
 
 
 
+
+
 .section h3 {
 
 
@@ -764,6 +849,7 @@ color:#ff7a00;
 
 
 }
+
 
 
 
@@ -781,25 +867,33 @@ BUTTONS
 display:inline-block;
 
 
+
 margin:10px;
+
 
 
 padding:15px 35px;
 
 
+
 background:#ff7a00;
+
 
 
 color:#000;
 
 
+
 text-decoration:none;
+
 
 
 font-weight:bold;
 
 
+
 border-radius:10px;
+
 
 
 transition:.3s;
@@ -810,17 +904,18 @@ transition:.3s;
 
 
 
+
 .button:hover {
 
 
 transform:scale(1.08);
 
 
+
 box-shadow:
 
 
 0 0 20px #ff7a00,
-
 
 0 0 60px #ff7a00;
 
@@ -830,6 +925,7 @@ box-shadow:
 
 
 </style>
+
 
 </head>
 
@@ -862,6 +958,7 @@ box-shadow:
 
 
 
+
 <!-- =========================
 HEADER
 ========================= -->
@@ -871,7 +968,11 @@ HEADER
 
 
 
+
+
 <img class="profile" src="bilder/thorsten.jpg">
+
+
 
 
 
@@ -888,6 +989,7 @@ Thorsten Westenberg
 
 
 
+
 <h2>
 
 IT-Systemelektroniker
@@ -896,7 +998,9 @@ IT-Systemelektroniker
 
 
 
+
 <div class="header-line"></div>
+
 
 
 
@@ -907,7 +1011,9 @@ IT-Systemelektroniker
 
 ● SYSTEM ONLINE
 
+
 <br>
+
 
 DIGITAL PORTFOLIO
 
@@ -917,6 +1023,8 @@ DIGITAL PORTFOLIO
 
 
 
+
+
 </div>
 
 
@@ -925,29 +1033,42 @@ DIGITAL PORTFOLIO
 
 
 
-<!-- VIDEO RECHTS -->
+<!-- VIDEO -->
 
 
 <div class="header-video">
+
+
+<div class="video-title">
+
+
+▶ SYSTEM PRESENTATION
+
+
+</div>
+
 
 
 
 <iframe
 
 
-src="https://www.youtube.com/embed/KTcR1otFX7g?si=4Q8cYfQ0Ly6ayX1G"
+src="https://www.youtube.com/embed/KTcR1otFX7g?rel=0&modestbranding=1"
 
 
-title="YouTube video player"
+title="System Presentation"
 
 
 frameborder="0"
 
 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+
 
 
 referrerpolicy="origin"
+
 
 
 allowfullscreen>
@@ -957,7 +1078,10 @@ allowfullscreen>
 
 
 
+
+
 </div>
+
 
 
 
@@ -981,11 +1105,13 @@ allowfullscreen>
 <div class="section">
 
 
+
 <h3>
 
 Über mich
 
 </h3>
+
 
 
 
@@ -997,7 +1123,9 @@ Funktion, sondern durch das Verständnis der
 Systeme dahinter.
 
 
+
 <br><br>
+
 
 
 Diese digitale Bewerbungsseite gibt einen Einblick
@@ -1005,7 +1133,9 @@ in meinen beruflichen Weg, meine Arbeitsweise
 und meine Leidenschaft für IT-Systeme.
 
 
+
 </p>
+
 
 
 
@@ -1036,11 +1166,13 @@ Bewerbungsunterlagen
 
 
 
+
 <a class="button" href="#">
 
 📄 Anschreiben
 
 </a>
+
 
 
 
@@ -1060,6 +1192,8 @@ Bewerbungsunterlagen
 📄 Zeugnisse
 
 </a>
+
+
 
 
 
@@ -1090,60 +1224,77 @@ Kontakt
 
 
 
+
 <p>
 
 
 E-Mail
 
+
 <br>
+
 
 TWBeruf@gmx.de
 
 
+
 <br><br>
+
 
 
 Telefon
 
+
 <br>
 
+
 017632563970
+
 
 
 <br><br>
 
 
+
 Wohnort
+
 
 <br>
 
+
 Lahnstein
+
 
 
 </p>
 
 
 
-</div>
-
-
-
-
-
-
 
 </div>
 
 
+
+
+
+
+
+
 </div>
 
 
 </div>
+
+
+</div>
+
+
 
 
 
 
 
 </body>
+
 
 </html>
