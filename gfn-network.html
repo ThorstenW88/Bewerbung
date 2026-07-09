@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>GFN Network Administration Mission 001</title>
+<style>
+body{
+    background:#080808;
+    color:white;
+    font-family:Segoe UI,Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+.panel{
+    width:560px;
+    background:#151515;
+    border:2px solid #ff7a00;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 0 25px rgba(255,122,0,.4);
+}
+h1,h2{color:#ff7a00}
+button{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    background:#ff7a00;
+    border:0;
+    font-weight:bold;
+    cursor:pointer;
+}
+.box{
+    border:1px solid #333;
+    padding:15px;
+    margin-top:20px;
+}
+input[type="text"],select{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px 15px;
+    background:#111;
+    color:white;
+    border:2px solid #ff7a00;
+    margin:8px 0;
+}
+.section-title{
+    color:white;
+    font-size:16px;
+    margin-top:20px;
+    margin-bottom:8px;
+    padding-left:0;
+}
+
+.device-box{
+    border:2px solid #ff7a00;
+    padding:10px 15px;
+    margin-top:8px;
+}
+.device{
+    display:grid;
+    grid-template-columns:1fr 70px;
+    align-items:center;
+    margin:15px 0;
+}
+.device input[type="checkbox"]{
+    width:16px;
+    height:16px;
+    justify-self:center;
+    margin:0;
+}
+.device-line{
+    height:1px;
+    background:#ff7a00;
+    opacity:.5;
+    margin:8px 0;
+}
+.status-success{
+    color:#00ff66;
+    font-weight:bold;
+}
+
+.status-error{
+    color:#ff3333;
+    font-weight:bold;
+}
+
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="panel">
+<h1>MODERN DESKTOP ADMINISTRATOR 2020</h1>
+<h2>GFN EDITION</h2>
+
+<div id="mission">
+<h2>MISSION 001</h2>
+<div class="box">
+Ein neuer Arbeitsplatz muss in das Firmennetzwerk eingebunden werden.<br><br>
+Aufgabe:<br>
+Konfigurieren Sie den Router nach Vorgabe.<br><br>
+Zielparameter:<br>
+SSID: HomeWiFi<br>
+Security: WPA2<br>
+Geräte: Laptop + Smartphone
+</div>
+<button onclick="startMission()">MISSION STARTEN</button>
+</div>
+
+<div id="config" class="hidden">
+<h2>NETWORK ADMINISTRATION</h2>
+
+SSID:
+<input id="ssid" type="text" placeholder="Netzwerkname">
+
+Security:
+<select id="security">
+<option>WPA2</option>
+<option>WPA3</option>
+<option selected>Open</option>
+</select>
+
+<div class="section-title">Geräte:</div>
+<div class="device-box">
+
+<label class="device">
+<span>Laptop</span>
+<input type="checkbox" id="laptop">
+</label>
+
+<div class="device-line"></div>
+
+<label class="device">
+<span>Smartphone</span>
+<input type="checkbox" id="phone">
+</label>
+
+</div>
+
+<button onclick="verify()">CHECK SYSTEM</button>
+</div>
+
+<div class="box" id="status">
+STATUS: WAITING...
+</div>
+
+<br><br>
+
+<button onclick="window.location.href='index_no_animation.html'">
+← ZURÜCK ZUR PROJEKTSEITE
+</button>
+
+</div>
+
+<script>
+function startMission(){
+document.getElementById("mission").style.display="none";
+document.getElementById("config").style.display="block";
+}
+
+function verify(){
+let ok =
+document.getElementById("ssid").value==="HomeWiFi" &&
+document.getElementById("security").value==="WPA2" &&
+document.getElementById("laptop").checked &&
+document.getElementById("phone").checked;
+
+document.getElementById("status").innerHTML =
+ok ?
+`<span class='status-success'>MISSION COMPLETE<br><br>NETWORK CONFIGURATION SUCCESSFUL</span>`
+:
+`<span class='status-error'>CONFIGURATION ERROR<br><br>Bitte Vorgaben prüfen.</span>`;
+}
+</script>
+</body>
+</html>
